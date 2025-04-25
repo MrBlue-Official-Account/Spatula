@@ -17,4 +17,4 @@ BANNER = f"""\t      {BRIGHT}{BLUE}_____{RESET}
         {BRIGHT}{BLUE}╔═╗┌─┐|\\|/|┬ ┬┬  ┌─┐{RESET}
         {BRIGHT}{WHITE}╚═╗├─┘ |@| │ ││  ├─┤
         ╚═╝┴   |_| └─┘┴─┘┴ ┴
-            {GREEN}\\ v.1.1.0 /{RESET}"""
+            {GREEN}\\ v.1.2.0 /{RESET}"""
