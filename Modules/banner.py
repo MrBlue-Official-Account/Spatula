@@ -18,3 +18,6 @@ BANNER = f"""\t      {BRIGHT}{BLUE}_____{RESET}
         {BRIGHT}{WHITE}╚═╗├─┘ |@| │ ││  ├─┤
         ╚═╝┴   |_| └─┘┴─┘┴ ┴
             {GREEN}\\ v.1.0.0 /{RESET}"""
+
+
+# Es solo un Texto Gracias.
