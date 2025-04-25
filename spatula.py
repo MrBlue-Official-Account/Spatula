@@ -10,9 +10,20 @@ from Modules.banner import BANNER, BRIGHT, RED, YELLOW, MAGENTA, GREEN, WHITE, R
 from Modules.emails_scrapper import EmailScraper
 from Modules.update import perform_update, __version__
 
+class BannerArgumentParser(argparse.ArgumentParser):
+    """ArgumentParser que imprime el BANNER antes de la ayuda."""
+    def print_help(self, file=None):
+        # Primero el banner
+        print(BANNER,'\n')
+        # Luego la ayuda normal
+        super().print_help(file)
+
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Web Email Scraper')
-    parser = argparse.ArgumentParser(description="Herramienta de scraping de correos electronicos.")
+    parser = BannerArgumentParser(
+        description="Herramienta de scraping de correos electrónicos."
+    )
+    # parser = argparse.ArgumentParser(description='Web Email Scraper')
+    # parser = argparse.ArgumentParser(description="Herramienta de scraping de correos electronicos.")
     parser.add_argument("url", nargs='?', help="URL base a explorar (por ejemplo: https://example.com)")
     parser.add_argument("-d", "--depth", type=int, default=2, help="Profundidad máxima de rastreo (por defecto: 2)")
     parser.add_argument("-sb", "--subdomains", type=int, default=0, help="Número máximo de páginas a visitar (0 = ilimitado)")
