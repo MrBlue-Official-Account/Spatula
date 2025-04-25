@@ -33,7 +33,7 @@ if __name__ == '__main__':
     parser.add_argument("-hd", "--hide", action="store_true", help="Ocultar los enlaces durante la navegación")
     parser.add_argument("--version", action="store_true", help="Mostrar versión de la herramienta")
     parser.add_argument("-o", "--output", metavar="FILE", help="Guardar correos encontrados en FILE.txt")
-    parser.add_argument("--update", action="store_true", help="Actualizar herramienta")
+    parser.add_argument("-up", "--update",action="store_true", help="Actualizar herramienta")
 
     args = parser.parse_args()
 
