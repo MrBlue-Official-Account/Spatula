@@ -1,1 +1,3 @@
 # Spatula
+
+ipconfig /flushdns
