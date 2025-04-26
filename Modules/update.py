@@ -13,7 +13,7 @@ import requests
 
 from Modules.banner import BRIGHT, GREEN, RED, YELLOW, WHITE,RESET
 
-__version__ = '1.2.0'
+__version__ = '1.3.0'
 
 RAW_UPDATE_URL = "https://raw.githubusercontent.com/MrBlue-Official-Account/Spatula/main/Modules/update.py"
 
@@ -55,7 +55,7 @@ def perform_update():
         print(f"❗️ {BRIGHT}{YELLOW}No se pudo determinar la version remota. Abortando actualizacion.{RESET}")
         return
 
-    print(f"{BRIGHT}{WHITE}version local:{RESET}{GREEN} {local_version}")
+    print(f"{BRIGHT}{WHITE}\nversion local:{RESET}{GREEN} {local_version}")
     print(f"{BRIGHT}{WHITE}version remota:{RESET}{GREEN} {remote_version}")
 
     if parse_version(remote_version) > parse_version(local_version):
@@ -92,7 +92,7 @@ def perform_update():
         finally:
             shutil.rmtree(temp_dir, ignore_errors=True)
     else:
-        print(f"{BRIGHT}{YELLOW}Ya estás en la version mas reciente ({local_version}).{RESET}")
+        print(f"{BRIGHT}{YELLOW}Ya estás en la version mas reciente ({local_version}).{RESET}\n")
 
 
 if __name__ == '__main__':
