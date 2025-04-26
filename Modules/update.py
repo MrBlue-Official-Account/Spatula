@@ -13,9 +13,9 @@ import requests
 
 from Modules.banner import BRIGHT, GREEN, RED, YELLOW, WHITE,RESET
 
-__version__ = '1.3.0'
+__version__ = '1.2.0'
 
-RAW_UPDATE_URL = "https://raw.githubusercontent.com/MrBlue-Official-Account/Spatula/main/Modules/update.py"
+RAW_UPDATE_URL = "https://raw.githubusercontent.com/MrBlue-Official-Account/Spatula/refs/heads/main/Modules/update.py"
 
 def get_local_version():
     try:
@@ -67,6 +67,9 @@ def perform_update():
             current_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
             for item in os.listdir(temp_dir):
+                if item == ".git":
+                    continue  # Ignorar carpeta .git
+
                 src_path = os.path.join(temp_dir, item)
                 dst_path = os.path.join(current_dir, item)
 
