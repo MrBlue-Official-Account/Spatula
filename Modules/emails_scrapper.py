@@ -138,6 +138,11 @@ class EmailScraper:
         options.add_argument("--use-angle=swiftshader")
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--log-level=3')
+
+        # Aceptar e ignorar errores de certificados inseguros (W3C standard) - certificados self-signed o expirados - ignora SSL/TLS inválidos
+        options.set_capability('acceptInsecureCerts', True)
+        options.add_argument('--ignore-certificate-errors')
+
         options.add_experimental_option('excludeSwitches', ['enable-logging', 'enable-automation'])
         options.add_argument(f"user-agent={random.choice(self.DEFAULT_USER_AGENTS)}")
 
@@ -226,8 +231,9 @@ class EmailScraper:
             logger.warning('⚠️ Timeout al cargar %s, omitiendo.', url)
         except StopIteration:
             raise
-        except WebDriverException as e:
-            logger.error('❗ %s%sWebDriverException en %s%s: %s%s', BRIGHT, RED, GREEN, url, RESET, e)
+        except WebDriverException:
+            #logger.error('❗ %s%sWebDriverException en %s%s: %s%s', BRIGHT, RED, GREEN, url, RESET, e)
+            print(f"\n⚠️ {BRIGHT}{WHITE}Verificar si la 'URL' es valida{RESET}\n")
         except Exception as e:
             logger.error('❗ %s%sError procesando %s%s: %s%s',BRIGHT,RED,WHITE, url, e, RESET)
 
