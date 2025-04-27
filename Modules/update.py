@@ -13,7 +13,7 @@ import requests
 
 from Modules.banner import BRIGHT, GREEN, RED, YELLOW, WHITE,RESET
 
-__version__ = '1.4.0'
+__version__ = '1.3.0'
 
 RAW_UPDATE_URL = "https://raw.githubusercontent.com/MrBlue-Official-Account/Spatula/refs/heads/main/Modules/update.py"
 
