@@ -13,7 +13,7 @@ import requests
 
 from Modules.banner import BRIGHT, GREEN, RED, YELLOW, WHITE,RESET
 
-__version__ = '1.4.0'
+__version__ = '1.2.0'
 
 RAW_UPDATE_URL = "https://raw.githubusercontent.com/MrBlue-Official-Account/Spatula/refs/heads/main/Modules/update.py"
 
@@ -84,7 +84,7 @@ def perform_update():
                 else:
                     shutil.copy2(src_path, dst_path)
 
-            print(f"{BRIGHT}{GREEN}\nactualizacion completada exitosamente a la version {remote_version}.{RESET}")
+            print(f"{BRIGHT}{GREEN}\nActualizacion completada exitosamente a la version {remote_version}.{RESET}\n")
 
         except subprocess.CalledProcessError as e:
             print(f"❌ {BRIGHT}{RED}\nError al clonar el repositorio:{RESET} {e}\n")
