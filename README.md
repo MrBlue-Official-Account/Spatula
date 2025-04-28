@@ -1,5 +1,9 @@
 
 ## Spatula
+ <p align="right">
+   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
+   </p>
+   
 
 Diseñado en la extracción de correos, mediante la navegación web. Utilizando Selenium como paquete base y Chromedriver  para simular la actividad de un usuario sin disparar los métodos anti-scraping empleados por las webs.
 ## Funciones
@@ -7,6 +11,8 @@ Diseñado en la extracción de correos, mediante la navegación web. Utilizando�
 - *Ignorar certificados **SSL/TLS** inválidos de forma segura para evitar bloqueos por errores de seguridad.*
 - *Personalizar tiempos de espera (timeouts) y retardos entre solicitudes para evitar la detección como bot*
 - *Instalación automatizada: `-up`, `--update` & `-upd`,  `--update-drivers`*
+
+
 
 >[!NOTE] Chromedriver
 >Antes de iniciar cualquier escaneo, instalar el Chromedriver.*(**Linux** o **Windows**), ejecutando: 
@@ -129,7 +135,7 @@ UPDATE:
    
 4. *Envía un **pull request** describiendo tu propuesta.*
 
-#### ‼️ Acotaciones
+#### ⚠️ Acotaciones
 
 - Esta herramienta está en **versión 1.2.0** y sigue en desarrollo.
    
