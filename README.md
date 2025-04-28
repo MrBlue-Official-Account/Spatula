@@ -11,7 +11,7 @@ Diseñado en la extracción de correos, mediante la navegación web. Utilizando�
 
 
 
->[!NOTE] Chromedriver
+>[!WARNING] 
 >Antes de iniciar cualquier escaneo, instalar el Chromedriver.*(**Linux** o **Windows**), ejecutando: 
 >```sh
 >python3 spatula.py -upd
@@ -30,12 +30,13 @@ Ejecutar el script principal con la URL objetivo:
 python3 spatula.py https://springfield.edu/
 ```
 
-![[Captura de pantalla 2025-04-28 075912.png]]
+![Captura de pantalla 2025-04-28 075707](https://github.com/user-attachments/assets/6e4a1a06-7f9a-4741-9483-02fefe913d93)
 
 
 ## Opciones Disponibles
 
->[!IMPORT]  Importante❗️
+>[!IMPORT]
+>**Importante❗️**:
 >Si ejecutará la herramienta en **Git Bash** desde Windows y salta por error: # [UnicodeEncodeError: 'charmap' codec can't encode characters](https://stackoverflow.com/questions/27092833/unicodeencodeerror-charmap-codec-cant-encode-characters) Ocurre, porque utiliza de forma predeterminada la codificación cp1252, que no puede representar algunos **Caracteres Unicode** en el banner o en la salida del programa.
 >
 >Ejecute el siguiente comando para evitar errores.
