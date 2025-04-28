@@ -1,6 +1,6 @@
 <p align="right"><img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green"></p>
-## Spatula
 
+## Spatula
  
 Diseñado en la extracción de correos, mediante la navegación web. Utilizando Selenium como paquete base y Chromedriver  para simular la actividad de un usuario sin disparar los métodos anti-scraping empleados por las webs.
 ## Funciones
