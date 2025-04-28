@@ -34,7 +34,7 @@ python3 spatula.py https://springfield.edu/
 
 ## Opciones Disponibles
 
->[!IMPORT]
+>[!IMPORTANT]
 >**Importante❗️**:
 >Si ejecutará la herramienta en **Git Bash** desde Windows y salta por error: # [UnicodeEncodeError: 'charmap' codec can't encode characters](https://stackoverflow.com/questions/27092833/unicodeencodeerror-charmap-codec-cant-encode-characters) Ocurre, porque utiliza de forma predeterminada la codificación cp1252, que no puede representar algunos **Caracteres Unicode** en el banner o en la salida del programa.
 >
