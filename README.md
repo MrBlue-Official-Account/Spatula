@@ -8,7 +8,7 @@ Diseñado en la extracción de correos, mediante la navegación web. Utilizando�
 - *Personalizar tiempos de espera (timeouts) y retardos entre solicitudes para evitar la detección como bot*
 - *Instalación automatizada: `-up`, `--update` & `-upd`,  `--update-drivers`*
 
->[!WARNING] Chromedriver
+>_[!WARNING]_ Chromedriver
 >Antes de iniciar cualquier escaneo, instalar el Chromedriver.*(**Linux** o **Windows**), ejecutando: 
 >```sh
 >python3 spatula.py -upd
