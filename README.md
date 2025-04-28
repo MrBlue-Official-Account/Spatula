@@ -10,7 +10,6 @@ Diseñado en la extracción de correos, mediante la navegación web. Utilizando�
 - *Instalación automatizada: `-up`, `--update` & `-upd`,  `--update-drivers`*
 
 
-
 >[!WARNING] 
 >Antes de iniciar cualquier escaneo, instalar el Chromedriver.*(**Linux** o **Windows**), ejecutando: 
 >```sh
@@ -43,8 +42,7 @@ python3 spatula.py https://springfield.edu/
 >```sh
  >PYTHONIOENCODING=utf-8 python3 spatula.py -h
 >```
->![[2025-04-28_11-13.png]]
-
+>![2025-04-28_11-13](https://github.com/user-attachments/assets/f1f8fa81-54c3-4f8f-bac2-0b5b0518f5b7)
 
 ```powershell
 python3 spatula.py -h
