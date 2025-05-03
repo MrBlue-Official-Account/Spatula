@@ -137,7 +137,7 @@ UPDATE:
    
 - Puede haber cambios sin previo aviso; detalla en tu PR cualquier ruptura de compatibilidad.
    
-- Para discusiones más amplias, usa el canal de _**Issues**_ del repositorio.
+- Para discusiones más amplias, usa el canal de _**[Issues](https://github.com/MrBlue-Official-Account/Spatula/issues)**_ del repositorio.
 
 ## 📧 Contacto
 
