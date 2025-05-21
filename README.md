@@ -36,7 +36,7 @@ python3 spatula.py https://springfield.edu/
 
 >[!IMPORTANT]
 >**Importante❗️**:
->Si ejecutará la herramienta en **Git Bash** desde Windows y salta por error: # [UnicodeEncodeError: 'charmap' codec can't encode characters](https://stackoverflow.com/questions/27092833/unicodeencodeerror-charmap-codec-cant-encode-characters) Ocurre, porque utiliza de forma predeterminada  la codificiacióm **cp1252**, que no puede representar algunos **caracteres Unicode** en el banner o en la salida del programa.
+>Si ejecutará la herramienta en **Git Bash** desde Windows y salta por error: # [UnicodeEncodeError: 'charmap' codec can't encode characters](https://stackoverflow.com/questions/27092833/unicodeencodeerror-charmap-codec-cant-encode-characters) Ocurre, porque utiliza de forma predeterminada  la codificiación **cp1252**, que no puede representar algunos **caracteres Unicode** en el banner o en la salida del programa.
 >
 >Ejecute el siguiente comando para evitar errores.
 >```sh
@@ -92,7 +92,7 @@ UPDATE:
 - `-t`, `--timeout`
 	- *Tiempo de espera para la carga de cada página (en segundos)*
 		```
-		python3 spatula.py http://repositoriodigital.fundacite-merida.gob.ve/ -sb 280 -t 20 --delay 2
+		python3 spatula.py http://repositoriodigital.fundacite-merida.gob.ve/ -sb 280 -t 20
 		```
 
 - `--delay` 
@@ -104,19 +104,19 @@ UPDATE:
 - `-v`, `--visible`
 	- *Mostrar el navegador durante el scraping.*
 		```
-		python3 spatula.py http://repositoriodigital.fundacite-merida.gob.ve/ -sb 280 -t 20 --delay 2
+		python3 spatula.py http://repositoriodigital.fundacite-merida.gob.ve/ -sb 280 -t 20 --delay 2 -v
 		```
 
 - `-hd`, `--hide`
 	- *Ocultar los enlaces que se van procesando en la salida.*
 		```
-		python3 spatula.py http://repositoriodigital.fundacite-merida.gob.ve/ -sb 280 -t 20 --delay 2
+		python3 spatula.py http://repositoriodigital.fundacite-merida.gob.ve/ -sb 280 -t 20 --delay 2 -hd
 		```
 
 - `-o`, `--output`
 	- *Guardar los correos en el fichero `FILE.txt`*
 		```
-		python3 spatula.py http://repositoriodigital.fundacite-merida.gob.ve/ -sb 280 -t 20 --delay 2
+		python3 spatula.py http://repositoriodigital.fundacite-merida.gob.ve/ -sb 280 -t 20 --delay 2 -o results.txt
 		```
 
 #### 🤝 Contribuciones
